@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useState } from 'react'
-import { FaBars } from 'react-icons/fa'
+import { FaBars } from 'react-icons/fa/'
+import { faHome, faList, faCog } from '@fortawesome/free-solid-svg-icons'
 import Sidebar from './Sidebar'
 
 export default function Navbar() {
@@ -10,17 +11,17 @@ export default function Navbar() {
     {
       name: 'Home',
       path: '/',
-      icon: 'FaBars',
+      icon: faHome,
     },
     {
       name: 'Recipes',
       path: '/recipes',
-      icon: 'FaBars',
+      icon: faList,
     },
     {
       name: 'Settings',
       path: '/settings',
-      icon: 'FaBars',
+      icon: faCog,
     },
   ]
   function closeSidebar() {

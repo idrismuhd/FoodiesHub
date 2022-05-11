@@ -1,7 +1,6 @@
 import React from 'react'
-
-import { FaCheck } from 'react-icons/fa'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { useState, useEffect } from 'react'
 
 export default function Settings() {
@@ -120,14 +119,14 @@ export default function Settings() {
           <div className='option light' onClick={() => changeTheme(0)}>
             {theme === 'light' && (
               <div className='check'>
-                <FaCheck />
+                <FontAwesomeIcon icon={faCheck} />
               </div>
             )}
           </div>
           <div className='option dark' onClick={() => changeTheme(1)}>
             {theme === 'dark' && (
               <div className='check'>
-                <FaCheck />
+                <FontAwesomeIcon icon={faCheck} />
               </div>
             )}
           </div>
@@ -145,7 +144,7 @@ export default function Settings() {
             >
               {primaryColor === index && (
                 <div className='check'>
-                  <FaCheck />
+                  <FontAwesomeIcon icon={faCheck} />
                 </div>
               )}
             </div>
@@ -164,7 +163,7 @@ export default function Settings() {
               {size.title}
               {fontSize === index && (
                 <span>
-                  <FaCheck />
+                  <FontAwesomeIcon icon={faCheck} />
                 </span>
               )}
             </button>
@@ -183,7 +182,7 @@ export default function Settings() {
               {speed.title}
               {animationSpeed === index && (
                 <span>
-                  <FaCheck />
+                  <FontAwesomeIcon icon={faCheck} />
                 </span>
               )}
             </button>

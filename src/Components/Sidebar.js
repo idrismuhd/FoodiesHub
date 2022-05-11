@@ -1,6 +1,7 @@
 import React from 'react'
-import { FaHome } from 'react-icons/fa'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link, useLocation } from 'react-router-dom'
+// import Navbar from './Navbar'
 
 export default function Sidebar({ links, close }) {
   const location = useLocation()
@@ -17,7 +18,8 @@ export default function Sidebar({ links, close }) {
           }
           key={link.name}
         >
-          <FaHome icon={link.icon} />
+          {/* <FontAwesomeIcon icon={link.text} /> */}
+          <FontAwesomeIcon icon={link.icon} />
           {link.name}
         </Link>
       ))}
